@@ -1,5 +1,3 @@
-import {promises as fs} from "fs"
-import {nanoid} from "nanoid"
 import { userModel } from "../models/users.model"
 
 class UserManager extends userModel

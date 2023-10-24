@@ -1,4 +1,3 @@
-import express from express
 import UserManager from "../controllers/UserManager.js"
 import {Router} from "express"
 

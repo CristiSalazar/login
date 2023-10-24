@@ -58,7 +58,7 @@ app.get("/products", async(req,res)=>{
     let allProducts = await product.getProducts()
     allProducts = allProducts.map(product => product.toJSON())
     res.render("viewProducts", {
-        title: "vista de los productos",
+        title: "vista productos",
         products: allProducts,
         email: req.session.emailUsuario,
         rol: req.session.rolUsuario,

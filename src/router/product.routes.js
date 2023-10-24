@@ -1,5 +1,4 @@
 import {Router} from "express"
-import mongoose from "mongoose"
 import ProductManager from "../controllers/ProductManager.js" 
 
 const prodRouter = Router()

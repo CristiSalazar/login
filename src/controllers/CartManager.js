@@ -31,7 +31,6 @@ class CartManager extends cartsModel {
             console.error("Error al agregar el carrito", error)
             return "Error al agragar el carrito"
         }
-
     }
 
     async removeProductCart(cartId, prodId){
@@ -40,9 +39,9 @@ class CartManager extends cartsModel {
                 if(!cart){
                     return "Carrito no encontrado"
                 }
-                const productIndex = cart.products.findIndex((product)=>product.productId === prodId)
-                if(productIndex !== -1){
-                    cart.products.splice(productIndex,1)
+                const prodIndex = cart.products.findIndex((product)=>product.productId === prodId)
+                if(prodIndex !== -1){
+                    cart.products.splice(prodIndex, 1)
                     await cart.save()
                     return "Producto eliminado del carrito"
                 }else {
